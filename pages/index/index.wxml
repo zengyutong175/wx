@@ -1,0 +1,5 @@
+<view id='index-page'>
+    <text class='text' bindtap='to2048'>
+          2048
+    </text>
+</view>

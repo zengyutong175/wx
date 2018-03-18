@@ -1,0 +1,19 @@
+
+#map{
+  position: absolute;
+  top:80rpx;
+  left:0;
+  bottom:0;
+  right:0;
+}
+map{
+  width:100% !important;
+  height:auto !important;
+}
+page{
+  height:100%;
+}
+.placeholder{
+  font-size: 30rpx;
+  line-height: 30rpx;
+}

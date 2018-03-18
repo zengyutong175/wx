@@ -1,0 +1,34 @@
+/**index.wxss**/
+#index-page{
+  text-align: center;
+  position:absolute;
+  top:0%;
+  left:0%;
+  bottom:0;
+  right:0;
+  display: flex;
+  flex-wrap: wrap ;
+  align-content:flex-start;
+}
+.text{
+  width:250rpx;
+  height:250rpx;
+  color:white;
+  border-radius: 30rpx;
+  background-color: #e0ba01;
+  line-height: 80rpx;
+  text-align: center;
+  font-size: 70rpx;
+}
+.after{
+  width:250rpx;
+  height:250rpx;
+  color:white;
+  border-radius: 30rpx;
+  background-color: #e0ba01;
+  line-height: 80rpx;
+  text-align: center;
+  font-size: 70rpx;
+}
+
+

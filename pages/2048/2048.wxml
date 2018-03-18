@@ -1,0 +1,26 @@
+<!--pages/2048/2048.wxml-->
+<view id='bg' >
+    <view id='title'>
+        <text class='title-left'>2048</text>
+          <text class='score-best-container'>
+              <text class='score'>
+                  <text style='color:#d2d6d6;display:block'>分数</text>
+                  <text style='color:white'>{{score}}</text>
+              </text>
+              <text class='best'>
+                  <text style='color:#d2d6d6;display:block;'>最高</text>
+                  <text style='color:white'>{{best}}</text>
+              </text>
+          </text>
+        <text class='new-game' bindtap='restart'>重新开始</text>
+    </view>
+    <view disable-scroll="true" id='content' bindtouchstart='touchstart' bindtouchend='touchend'>
+      <block class='grid-container' wx:for='{{datas}}' wx:for-item="data_item" wx:key='index'>
+        <text class='grid {{"color"+item}} active' wx:for='{{data_item}}'  wx:key='index'  >{{item}}</text>
+      </block>
+    </view>
+    <view id='mask-layer' bindtap='gameoverTap' wx:if='{{gameover}}'>
+        <text class='gameover'>游戏结束</text>
+        <text class='gameover-score'>1024</text>
+    </view>
+</view>
